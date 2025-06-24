@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WoodenLogSpawnScript : MonoBehaviour
+public class WoodenLogSpawn : MonoBehaviour
 {
     public GameObject woodenlog;
     public float spawnRate = 2f;
@@ -20,11 +20,13 @@ public class WoodenLogSpawnScript : MonoBehaviour
         {
             spawnWoodenLog();
             timer = 0f;
+            Debug.Log("Rura!");
         }
     }
     void spawnWoodenLog()
     {
         float lowestPoint = transform.position.y - heightOffset;
-        Instantiate(woodenlog, transform.position, Quaternion.identity);
+        float highestPoint = transform.position.y + heightOffset;
+        Instantiate(woodenlog, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
 }

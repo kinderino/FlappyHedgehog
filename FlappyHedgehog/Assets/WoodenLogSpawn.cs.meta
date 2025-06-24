@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: ada14060f9d07c243ae223f0a210bbc1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - woodenlog: {fileID: 8612517263804052802, guid: 25b4ac8134a7f014897e8494a2ea4d77, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

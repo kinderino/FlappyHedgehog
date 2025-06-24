@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public Rigidbody2D RigidbodyPlayer;
     public float flapStrength;
